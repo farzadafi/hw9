@@ -22,4 +22,17 @@ public class exerciseTwo {
         System.out.println( "Intersection is:" + intersection);
     }
 
+    public static TreeSet<Character> generateRandomCharacter(){
+        TreeSet<Character> treeSet = new TreeSet<>();
+        Random random = new Random();
+        while(true){
+            char randomChar = (char) (random.nextInt(26) + 'a');
+            treeSet.add(randomChar);
+            if(treeSet.size() == 10 )
+                break;
+        }
+        return treeSet;
+    }
+
+
 }
