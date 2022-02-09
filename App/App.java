@@ -8,12 +8,13 @@ public class App {
         int command;
         Scanner input = new Scanner(System.in);
         exerciseOne exerciseOne = new exerciseOne();
+        exerciseTwo exerciseTwo = new exerciseTwo();
 
 
         while (true) {
             System.out.println("\n***WELCOME***");
-            System.out.println("1-word processor");
-            System.out.println("2-");
+            System.out.println("1-word processor.");
+            System.out.println("2-Create Two Tree Set(union and intersection).");
             System.out.println("3-");
             System.out.println("4-");
             System.out.println("5-Exit");
@@ -34,7 +35,7 @@ public class App {
                     break;
 
                 case 2:
-
+                    exerciseTwo.exerciseTwo();
                     break;
 
                 case 3:
