@@ -9,13 +9,14 @@ public class App {
         Scanner input = new Scanner(System.in);
         exerciseOne exerciseOne = new exerciseOne();
         exerciseTwo exerciseTwo = new exerciseTwo();
+        exerciseThree exerciseThree = new exerciseThree();
 
 
         while (true) {
             System.out.println("\n***WELCOME***");
             System.out.println("1-word processor.");
             System.out.println("2-Create Two Tree Set(union and intersection).");
-            System.out.println("3-");
+            System.out.println("3-Remove Bad Pair.");
             System.out.println("4-");
             System.out.println("5-Exit");
             System.out.print("Please select a number:");
@@ -39,7 +40,7 @@ public class App {
                     break;
 
                 case 3:
-
+                    exerciseThree.exerciseThree();
                     break;
 
                 case 4:

@@ -29,6 +29,7 @@ public class exerciseThree {
                 number = input.nextInt();
                 integerList.add(number);
             }catch (InputMismatchException exception){
+                input.nextLine();
                 System.out.println("End of the Array!");
                 break;
             }
