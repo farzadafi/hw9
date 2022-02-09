@@ -36,5 +36,22 @@ public class exerciseThree {
         return integerList;
     }
 
+    public static List<Integer> arrangeList(ArrayList<Integer> arrayList){
+        if(arrayList.size() %2 == 1 )
+            arrayList.remove(arrayList.size()-1);
+
+        for(int q=0;q<2;q++) {
+            for (int i = 0; i < arrayList.size() - 1; i += 2) {
+                final int j = i;
+                if (arrayList.get(j) > arrayList.get(j + 1)) {
+                    arrayList.remove(j);
+                    arrayList.remove(j);
+                }
+            }
+        }
+        return arrayList;
+    }
+
+
 
 }
