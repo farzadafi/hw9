@@ -1,5 +1,6 @@
 package App;
 
+import java.util.Random;
 import java.util.TreeSet;
 
 public class exerciseTwo {
@@ -33,6 +34,14 @@ public class exerciseTwo {
         }
         return treeSet;
     }
+
+    public static TreeSet<Character> union(TreeSet<Character> randomCharacterA,TreeSet<Character> randomCharacterB){
+        TreeSet<Character> tempUnion = new TreeSet<>();
+        tempUnion.addAll(randomCharacterA);
+        tempUnion.addAll(randomCharacterB);
+        return tempUnion;
+    }
+
 
 
 }
