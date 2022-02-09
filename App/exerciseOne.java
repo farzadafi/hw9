@@ -70,6 +70,14 @@ public class exerciseOne {
                 System.out.println("You enter a wrong input!");
         }
 
+    public static int fact(int number) {
+        int i, fact = 1;
+        for (i = 1; i <= number; i++) {
+            fact = fact * i;
+        }
+        return fact;
+    }
+
 
 
     }
