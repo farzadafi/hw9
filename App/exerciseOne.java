@@ -78,6 +78,19 @@ public class exerciseOne {
         return fact;
     }
 
-
+    public static Map<Character, Integer> calcNumberOfLetter(String input) {
+        Map<Character, Integer> calc = new HashMap<>();
+        char[] arrayInput = input.toCharArray();
+        int number;
+        for (int i = 0; i < input.length(); i++) {
+            number = 0;
+            Character s = arrayInput[i];
+            for (int j = 0; j < input.length(); j++)
+                if (s.equals(arrayInput[j]))
+                    number++;
+            calc.put(s, number);
+        }
+        return calc;
+    }
 
     }
