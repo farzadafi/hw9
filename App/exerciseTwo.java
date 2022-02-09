@@ -42,6 +42,13 @@ public class exerciseTwo {
         return tempUnion;
     }
 
+    public static TreeSet<Character> intersection(TreeSet<Character> randomCharacterA,TreeSet<Character> randomCharacterB){
+        TreeSet<Character> tempIntersection = new TreeSet<>();
+        tempIntersection.addAll(randomCharacterA);
+        tempIntersection.retainAll(randomCharacterB);
+        return tempIntersection;
+    }
+
 
 
 }
