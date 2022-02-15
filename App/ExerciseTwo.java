@@ -3,7 +3,7 @@ package App;
 import java.util.Random;
 import java.util.TreeSet;
 
-public class exerciseTwo {
+public class ExerciseTwo {
 
     public void exerciseTwo() {
         TreeSet<Character> randomCharacterA = new TreeSet<>();

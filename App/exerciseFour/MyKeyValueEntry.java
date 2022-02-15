@@ -2,16 +2,16 @@ package App.exerciseFour;
 
 import java.util.Objects;
 
-public class myKeyValueEntry<K, V> {
+public class MyKeyValueEntry<K, V> {
     private K key;
     private V value;
 
-    public myKeyValueEntry(K key, V value) {
+    public MyKeyValueEntry(K key, V value) {
         this.key = key;
         this.value = value;
     }
 
-    public myKeyValueEntry() {
+    public MyKeyValueEntry() {
     }
 
     public K getKey() {
@@ -35,7 +35,7 @@ public class myKeyValueEntry<K, V> {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        myKeyValueEntry<?, ?> that = (myKeyValueEntry<?, ?>) o;
+        MyKeyValueEntry<?, ?> that = (MyKeyValueEntry<?, ?>) o;
         return Objects.equals(key, that.key) && Objects.equals(value, that.value);
     }
 

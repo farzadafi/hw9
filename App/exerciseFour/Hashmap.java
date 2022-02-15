@@ -4,23 +4,23 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class hashmap<K, V> {
+public class Hashmap<K, V> {
     private int CAPACITY = 10;
-    private myMapBucket[] bucket;
+    private MyMapBucket[] bucket;
     private int size = 0;
     private List<K> list = new ArrayList<>();
 
-    public hashmap() {
-        this.bucket = new myMapBucket[CAPACITY];
+    public Hashmap() {
+        this.bucket = new MyMapBucket[CAPACITY];
     }
     private int getHash(K key) {
         return (key.hashCode() & 0xfffffff) % CAPACITY;
     }
 
-    private myKeyValueEntry getEntry(K key) {
+    private MyKeyValueEntry getEntry(K key) {
         int hash = getHash(key);
         for (int i = 0; i < bucket[hash].getEntries().size(); i++) {
-            myKeyValueEntry myKeyValueEntry = bucket[hash].getEntries().get(i);
+            MyKeyValueEntry myKeyValueEntry = bucket[hash].getEntries().get(i);
             if(myKeyValueEntry.getKey().equals(key)) {
                 return myKeyValueEntry;
             }
@@ -29,14 +29,14 @@ public class hashmap<K, V> {
     }
     public void put(K key, V value) {
         if(containsKey(key)) {
-            myKeyValueEntry entry = getEntry(key);
+            MyKeyValueEntry entry = getEntry(key);
             entry.setValue(value);
         } else {
             int hash = getHash(key);
             if(bucket[hash] == null) {
-                bucket[hash] = new myMapBucket();
+                bucket[hash] = new MyMapBucket();
             }
-            bucket[hash].addEntry(new myKeyValueEntry<>(key, value));
+            bucket[hash].addEntry(new MyKeyValueEntry<>(key, value));
             size++;
             list.add(key);
         }

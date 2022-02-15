@@ -2,7 +2,7 @@ package App;
 
 import java.util.*;
 
-public class exerciseOne {
+public class ExerciseOne {
         Scanner input = new Scanner(System.in);
         String characters, randomString;
         Random random = new Random();

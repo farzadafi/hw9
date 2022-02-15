@@ -5,7 +5,7 @@ import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
-public class exerciseThree {
+public class ExerciseThree {
     int number;
     static Scanner input = new Scanner(System.in);
     List<Integer> integerList = new ArrayList<>();

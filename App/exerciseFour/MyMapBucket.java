@@ -3,24 +3,24 @@ package App.exerciseFour;
 import java.util.LinkedList;
 import java.util.List;
 
-public class myMapBucket {
-    private List<myKeyValueEntry> entries;
+public class MyMapBucket {
+    private List<MyKeyValueEntry> entries;
 
-    public myMapBucket() {
+    public MyMapBucket() {
         if(entries == null) {
             entries = new LinkedList<>();
         }
     }
 
-    public List<myKeyValueEntry> getEntries() {
+    public List<MyKeyValueEntry> getEntries() {
         return entries;
     }
 
-    public void addEntry(myKeyValueEntry entry) {
+    public void addEntry(MyKeyValueEntry entry) {
         this.entries.add(entry);
     }
 
-    public void removeEntry(myKeyValueEntry entry) {
+    public void removeEntry(MyKeyValueEntry entry) {
         this.entries.remove(entry);
     }
 

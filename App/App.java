@@ -1,19 +1,19 @@
 package App;
 
-import App.exerciseFour.hashmap;
+import App.exerciseFour.Hashmap;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import static App.exerciseThree.input;
+import static App.ExerciseThree.input;
 
 public class App {
     public static void main(String[] args) {
         int command;
         Scanner input = new Scanner(System.in);
-        exerciseOne exerciseOne = new exerciseOne();
-        exerciseTwo exerciseTwo = new exerciseTwo();
-        exerciseThree exerciseThree = new exerciseThree();
+        ExerciseOne exerciseOne = new ExerciseOne();
+        ExerciseTwo exerciseTwo = new ExerciseTwo();
+        ExerciseThree exerciseThree = new ExerciseThree();
 
 
         while (true) {
@@ -62,7 +62,7 @@ public class App {
     }
 
     public static void hashMap(){
-        hashmap hashMap = new hashmap();
+        Hashmap hashMap = new Hashmap();
         String key;
         int command;
         boolean isTrue = true;
